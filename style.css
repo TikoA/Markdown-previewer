@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    height: auto;
+    width: calc(50% - 30px - 4rem);
+    outline: none;
+    border-right: 4px solid lightgray;
+    margin-right: 4rem;
+    font-size: 1.2rem;
+    background: #343a40;
+    color: white;
+    padding: 2rem;
+}
+
+#preview {
+    width: 50%;
+}
+
+@media (max-width:1000px) {
+    .main-wrapper {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    textarea {
+        width: 100%;
+        outline: none;
+        margin: 0;
+        padding: 2rem;
+        height: calc(100vh - 2rem);
+    }
+    
+    #preview {
+        width: 98%;
+        padding: 2rem;
+    }
+}
